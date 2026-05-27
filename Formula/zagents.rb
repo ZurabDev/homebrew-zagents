@@ -5,21 +5,21 @@
 class Zagents < Formula
   desc "ZAgents CLI — local agent runtime and management tool (Multica fork)"
   homepage "https://github.com/ZurabDev/multica"
-  version "0.3.10-mz.2"
+  version "0.3.10-mz.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ZurabDev/multica/releases/download/v0.3.10-mz.2/multica-cli-0.3.10-mz.2-darwin-amd64.tar.gz"
-      sha256 "a81e06558c08ac566b36a30b641406f7790ef1f304098bfe35d18cd8723d77ac"
+      url "https://github.com/ZurabDev/multica/releases/download/v0.3.10-mz.3/multica-cli-0.3.10-mz.3-darwin-amd64.tar.gz"
+      sha256 "5ec7fbe30ebe854819c4bf89603b020f47bb3f838b1ffb3d11323dba71b229ba"
 
       define_method(:install) do
         bin.install "multica"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ZurabDev/multica/releases/download/v0.3.10-mz.2/multica-cli-0.3.10-mz.2-darwin-arm64.tar.gz"
-      sha256 "5124b87401c6ba7dac13bf8cd02d25765dd6ca21cebc1f56c1a3a7637df8246a"
+      url "https://github.com/ZurabDev/multica/releases/download/v0.3.10-mz.3/multica-cli-0.3.10-mz.3-darwin-arm64.tar.gz"
+      sha256 "2c36b05e66b926815927dd6d4be46a4a6a14c7ec007436327dd4450fb789b1b9"
 
       define_method(:install) do
         bin.install "multica"
@@ -29,15 +29,15 @@ class Zagents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZurabDev/multica/releases/download/v0.3.10-mz.2/multica-cli-0.3.10-mz.2-linux-amd64.tar.gz"
-      sha256 "daa9659d8c79f1a6e3ec2fc0401b9ddf49155e297d64c9631f8abfa7c99c9836"
+      url "https://github.com/ZurabDev/multica/releases/download/v0.3.10-mz.3/multica-cli-0.3.10-mz.3-linux-amd64.tar.gz"
+      sha256 "a34b5c3afa97683cc4913a2d19ef817ac49228cf193151403851f65348a6bcba"
       define_method(:install) do
         bin.install "multica"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZurabDev/multica/releases/download/v0.3.10-mz.2/multica-cli-0.3.10-mz.2-linux-arm64.tar.gz"
-      sha256 "e8f961fb493932d36840cc53eeae538640ba17885e252f5071dbe1a2c1d92897"
+      url "https://github.com/ZurabDev/multica/releases/download/v0.3.10-mz.3/multica-cli-0.3.10-mz.3-linux-arm64.tar.gz"
+      sha256 "779face691d775993b91b8dddb62b2a7e28b36a1b7cb90b0c944e0ceae62ffee"
       define_method(:install) do
         bin.install "multica"
       end
