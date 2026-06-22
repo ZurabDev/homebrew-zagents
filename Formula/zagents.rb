@@ -5,21 +5,21 @@
 class Zagents < Formula
   desc "ZAgents CLI — local agent runtime and management tool (Multica fork)"
   homepage "https://github.com/ZurabDev/multica"
-  version "0.3.26-mz.8"
+  version "0.3.27-mz.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ZurabDev/multica/releases/download/v0.3.26-mz.8/multica-cli-0.3.26-mz.8-darwin-amd64.tar.gz"
-      sha256 "bb65727b38848a4aebd5abb84d4e03e852a10c6bebffcd14f3ca766ab78b04a1"
+      url "https://github.com/ZurabDev/multica/releases/download/v0.3.27-mz.1/multica-cli-0.3.27-mz.1-darwin-amd64.tar.gz"
+      sha256 "1d4a97b51754872114741dd73532b78470906bbdac5e32d2cd712d775d50e00d"
 
       define_method(:install) do
         bin.install "zagents"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ZurabDev/multica/releases/download/v0.3.26-mz.8/multica-cli-0.3.26-mz.8-darwin-arm64.tar.gz"
-      sha256 "c722580f9c01c14b39f5b9c20cd3d9cfb97e98cee132532e4251f14621e035d8"
+      url "https://github.com/ZurabDev/multica/releases/download/v0.3.27-mz.1/multica-cli-0.3.27-mz.1-darwin-arm64.tar.gz"
+      sha256 "61835c8607c8de3a22780d615cd417d98f09eec08657d20030739c5e324d92b1"
 
       define_method(:install) do
         bin.install "zagents"
@@ -29,15 +29,15 @@ class Zagents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZurabDev/multica/releases/download/v0.3.26-mz.8/multica-cli-0.3.26-mz.8-linux-amd64.tar.gz"
-      sha256 "ccd070254feb6701f491a648d9f335a99d4a0d6817bbf00656a76fef4525a37a"
+      url "https://github.com/ZurabDev/multica/releases/download/v0.3.27-mz.1/multica-cli-0.3.27-mz.1-linux-amd64.tar.gz"
+      sha256 "4df8c885f1a1df519dd60d25dd2354f1971f28eaec6f6fecb885f3a4130e4f0f"
       define_method(:install) do
         bin.install "zagents"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZurabDev/multica/releases/download/v0.3.26-mz.8/multica-cli-0.3.26-mz.8-linux-arm64.tar.gz"
-      sha256 "04bc26c47d3d1ac2d514c143c63ef09ad3bc71b7abb234b1033360290ae593f6"
+      url "https://github.com/ZurabDev/multica/releases/download/v0.3.27-mz.1/multica-cli-0.3.27-mz.1-linux-arm64.tar.gz"
+      sha256 "63743190cc840ab377f649e7df36b0b1535e1ba0f487f21eaf6fa930cdeb5f68"
       define_method(:install) do
         bin.install "zagents"
       end
