@@ -5,21 +5,21 @@
 class Zagents < Formula
   desc "ZAgents CLI — local agent runtime and management tool (Multica fork)"
   homepage "https://github.com/ZurabDev/multica"
-  version "0.8.1-mz.5"
+  version "0.8.1-mz.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ZurabDev/zagents-releases/releases/download/v0.8.1-mz.5/zagents-cli-0.8.1-mz.5-darwin-amd64.tar.gz"
-      sha256 "dbb18afc834e4a7fe36206ef68c92248762a07c01dfdbc2ee70ff1fad3955dc3"
+      url "https://github.com/ZurabDev/zagents-releases/releases/download/v0.8.1-mz.6/zagents-cli-0.8.1-mz.6-darwin-amd64.tar.gz"
+      sha256 "138e92a91eae9891c9e1aab217d44e5df7fce4311e8dae563c810df6ce8ec1f9"
 
       define_method(:install) do
         bin.install "zagents"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ZurabDev/zagents-releases/releases/download/v0.8.1-mz.5/zagents-cli-0.8.1-mz.5-darwin-arm64.tar.gz"
-      sha256 "ef3ae1ff8eac53594e752c6c45a86f9af3e80a29aa3d29eff9e471c6f3651faa"
+      url "https://github.com/ZurabDev/zagents-releases/releases/download/v0.8.1-mz.6/zagents-cli-0.8.1-mz.6-darwin-arm64.tar.gz"
+      sha256 "2ee6e40df2382730b3254aa238cd3218dc99b76bc30a2951d33375dc2fd538f3"
 
       define_method(:install) do
         bin.install "zagents"
@@ -29,15 +29,15 @@ class Zagents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZurabDev/zagents-releases/releases/download/v0.8.1-mz.5/zagents-cli-0.8.1-mz.5-linux-amd64.tar.gz"
-      sha256 "4a7a4a75e192d0fe192559e1e7b2df1a2a2fe159f74e519d6a72c79f5155d547"
+      url "https://github.com/ZurabDev/zagents-releases/releases/download/v0.8.1-mz.6/zagents-cli-0.8.1-mz.6-linux-amd64.tar.gz"
+      sha256 "818c80ab546be7c711552f601aad72e3f9b43d3d98cb4d8545f990bdfbc1f372"
       define_method(:install) do
         bin.install "zagents"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZurabDev/zagents-releases/releases/download/v0.8.1-mz.5/zagents-cli-0.8.1-mz.5-linux-arm64.tar.gz"
-      sha256 "0731e0245948a1ed8a8a68480c1b6090070d15717c23e51579d358dc2df941c0"
+      url "https://github.com/ZurabDev/zagents-releases/releases/download/v0.8.1-mz.6/zagents-cli-0.8.1-mz.6-linux-arm64.tar.gz"
+      sha256 "ccba94c66d04630c08d362422209b16c2d87327ace8f95cc79eeb0c8b5901a4a"
       define_method(:install) do
         bin.install "zagents"
       end
